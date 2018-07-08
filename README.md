@@ -12,7 +12,7 @@ logs data Analysis report of adatabase using logs report using postgresql, pgadm
 
   3-The get_requests_fail_days to get the days on which the requests lead to more than 1% errors.
 
-<strong>.install Envirnoment </strong>
+<h2>install Envirnoment </h2>
 
 1-install python 3.7 
 
@@ -40,7 +40,7 @@ The views used in this project:
             "inner join dataerror on alldata.date=dataerror.date "
        
               
-. how to run?
+<h2> how to run? </h2>
 
 1- install postgresql 9.6
 
