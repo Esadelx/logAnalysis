@@ -1,8 +1,18 @@
 # logAnalysis
 Udaicty project 3 logs Analysis
 
-logsdata Analysis report of adatabase using logs report using postgresql and pgadmin and Python
-install Envirnoment  
+logsdata Analysis report of adatabase using logs report using postgresql, pgadmin and Python
+ 
+
+The project consist of 3 main functions as following:
+
+The get_top_articles to get the top 3 articles in number of views.
+
+The get_top_authors to get the authors ordered by the number of the views of their articles.
+
+The get_requests_fail_days to get the days on which the requests lead to more than 1% errors.
+
+install Envirnoment 
 
 1-install python 3.7 
 
@@ -10,19 +20,29 @@ install Envirnoment
 
 3-install pgAdmin 4 
 
-create view in postgreql 
+The views used in this project:
 
-       CREATE OR REPLACE VIEW articlesv AS
-       (SELECT slug as id, COUNT(path) AS views
-       FROM articles
-       LEFT JOIN log ON slug = substring(path from 10)
-       GROUP BY slug);
-       
+       "create or replace view error as "
+            "select substring(cast(log.time as text), 0, 11) as date, "
+            "count(log.status) as error "
+            "from log "
+            "where log.status like '%404%' "
+            "group by date "
+            
+    "create or replace view  data as "
+            "select substring(cast(log.time as text), 0, 11) as date , count(log.status) as all from log "
+            "group by date "
+            
+    "create or replace view query as "
+            "select alldata.date, "
+            "((dataerror.error / alldata.all::float)*100) as all_error "
+            "from alldata "
+            "inner join dataerror on alldata.date=dataerror.date "
        
               
  #How to run the project?
 
-1- install postgres
+1- install postgresql
 
 2- create a database in pgAdmin4 by the name logsAnlaysis the 3 tables and the view which descriped above download this archieve
 https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip
@@ -34,4 +54,4 @@ extract the sql file which contains the statements for creating the tables then 
 
 5-Type the command C:\Program Files\PostgreSQL\9.6\bin>psql -U postgres -d LogAnalysis -a -f newsdata.sql
 
-6- run python loganalyiss.py
+6- run python loganalyis.py
