@@ -23,6 +23,9 @@ CREATE OR REPLACE VIEW articlesv AS
 https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip
 extract the sql file which contains the statements for creating the tables then execute the create view statement.
 3-Create a Super User with granting all privileges 
+
 4- run psql -d logAnalysis -f newsdata.sql
+
 5-Type the command C:\Program Files\PostgreSQL\9.6\bin>psql -U postgres -d LogAnalysis -a -f newsdata.sql
-4- run python loganalyiss.py
+
+6- run python loganalyiss.py
