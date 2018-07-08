@@ -12,7 +12,7 @@ The project consist of 3 main functions as following:
 
   3-The get_requests_fail_days to get the days on which the requests lead to more than 1% errors.
 
-.install Envirnoment 
+<strong>.install Envirnoment 
 
 1-install python 3.7 
 
