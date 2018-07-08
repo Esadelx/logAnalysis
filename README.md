@@ -1,7 +1,7 @@
 # logAnalysis
 Udaicty project 3 logs Analysis
 
-logsdata Analysis report of adatabase using logs report using postgresql, pgadmin and Python
+logs data Analysis report of adatabase using logs report using postgresql, pgadmin and Python
  
 
 The project consist of 3 main functions as following:
