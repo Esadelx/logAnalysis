@@ -1,7 +1,9 @@
 # logAnalysis
 Udaicty project 3 logs Analysis
+
 logsdata Analysis report of adatabase using logs report using postgresql and pgadmin and Python
-install Envirnoment 
+install Envirnoment  
+
 1-install python 3.7 
 2-install postgresql 9.0 9.6 
 3-install pgAdmin 4 
