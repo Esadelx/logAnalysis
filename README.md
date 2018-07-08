@@ -8,6 +8,7 @@ install Envirnoment
 .install python libs needed 
 
 create view in postgreql 
+
 CREATE OR REPLACE VIEW articlesv AS
        (SELECT slug as id, COUNT(path) AS views
        FROM articles
