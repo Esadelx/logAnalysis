@@ -1,4 +1,5 @@
 #module to connect to the database
+
 import psycopg2
 #connect todatabase user=postgres password=1234
 db = psycopg2.connect("dbname=logAnalysis")
