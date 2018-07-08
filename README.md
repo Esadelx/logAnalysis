@@ -42,7 +42,7 @@ The views used in this project:
               
  #How to run the project?
 
-1- install postgresql
+1- install postgresql 9.6
 
 2- create a database in pgAdmin4 by the name logsAnlaysis the 3 tables and the view which descriped above download this archieve
 https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip
