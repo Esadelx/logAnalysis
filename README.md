@@ -1,10 +1,10 @@
 # logAnalysis
-Udaicty project 3 logs Analysis
+<h2>Udaicty project 3 logs Analysis</h2>
 
 logs data Analysis report of adatabase using logs report using postgresql, pgadmin and Python
  
 
-The project consist of 3 main functions as following:
+<h2>The project consist of 3 main functions as following:</h2>
 
   1-The get_top_articles to get the top 3 articles in number of views.
 
@@ -12,7 +12,7 @@ The project consist of 3 main functions as following:
 
   3-The get_requests_fail_days to get the days on which the requests lead to more than 1% errors.
 
-<strong>.install Envirnoment 
+<strong>.install Envirnoment </strong>
 
 1-install python 3.7 
 
