@@ -46,7 +46,7 @@ def close_connection():
         db.close()
 
 
-#function 4 appera the queryresult table that take the finction as a parameter
+#function 4 appear the queryresult table that take the function as a parameter
 def print_thetable(x):
     if x == first_question:
         count_type= 'views'
