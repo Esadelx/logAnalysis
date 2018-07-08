@@ -40,7 +40,7 @@ The views used in this project:
             "inner join dataerror on alldata.date=dataerror.date "
        
               
-<h2> how to run? </h2>
+<h2> How to run? </h2>
 
 1- install postgresql 9.6
 
