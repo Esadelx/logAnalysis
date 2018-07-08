@@ -5,10 +5,10 @@ cursor = db.cursor()
 def first_question():
     #first qusetion function to view the top 3 articles
     sqlstmt = '''SELECT title, views
-                FROM articles, articlesv
-                WHERE articles.slug = articlesv.id
-                ORDER BY views DESC
-                LIMIT 3;'''
+                 FROM articles, articlesv
+                 WHERE articles.slug = articlesv.id
+                 ORDER BY views DESC
+                 LIMIT 3;'''
     cursor.execute(sqlstmt)
     return cursor.fetchall()
 
