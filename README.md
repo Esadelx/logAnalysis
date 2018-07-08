@@ -10,9 +10,6 @@ install Envirnoment
 
 3-install pgAdmin 4 
 
-4-install python libs needed 
-
-
 create view in postgreql 
 
        CREATE OR REPLACE VIEW articlesv AS
