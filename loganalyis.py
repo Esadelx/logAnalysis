@@ -1,10 +1,6 @@
-#module to connect to the database
-
-import psycopg2
-#connect todatabase user=postgres password=1234
-db = psycopg2.connect("dbname=logAnalysis")
+import psycopg2 #module to connect to the database
+db = psycopg2.connect("dbname=logAnalysis user=Sully password = 1234")#connect todatabase 
 cursor = db.cursor()
-
 #function 1 to get the top 3 articles in view
 def first_question():
     #first qusetion function to view the top 3 articles
@@ -59,9 +55,9 @@ def print_thetable(x):
         count_type = '%errors'
         print("THE DAYS WHICH HAVE MORE THEN 1% PERCENTAGE ERRORS: ")
         rows = x()
-        
+        #rows = []
     for row in rows:
-            print("%s - %s%s" % (str(row[0]),str(row[1]),count_type))
+            print("%s - %s%s" % (str(row[0]), str(row[1]), count_type))
     print ()
 if __name__ == '__main__':
     # the first query in the database
