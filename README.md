@@ -16,10 +16,15 @@ install Envirnoment
 create view in postgreql 
 
 CREATE OR REPLACE VIEW articlesv AS
+
        (SELECT slug as id, COUNT(path) AS views
+       
        FROM articles
+       
        LEFT JOIN log ON slug = substring(path from 10)
+       
        GROUP BY slug);
+       
        
               
  #How to run the project?
