@@ -12,7 +12,7 @@ The project consist of 3 main functions as following:
 
   The get_requests_fail_days to get the days on which the requests lead to more than 1% errors.
 
-install Envirnoment 
+.install Envirnoment 
 
 1-install python 3.7 
 
@@ -40,7 +40,7 @@ The views used in this project:
             "inner join dataerror on alldata.date=dataerror.date "
        
               
- #How to run the project?
+. how to run?
 
 1- install postgresql 9.6
 
