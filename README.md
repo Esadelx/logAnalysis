@@ -1,4 +1,3 @@
-# logAnalysis
 <h2>Udaicty project 3 logs Analysis</h2>
 
 logs data Analysis report of adatabase using logs report using postgresql, pgadmin and Python
