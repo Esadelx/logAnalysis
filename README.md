@@ -5,9 +5,13 @@ logsdata Analysis report of adatabase using logs report using postgresql and pga
 install Envirnoment  
 
 1-install python 3.7 
+
 2-install postgresql 9.0 9.6 
+
 3-install pgAdmin 4 
+
 4-install python libs needed 
+
 
 create view in postgreql 
 
