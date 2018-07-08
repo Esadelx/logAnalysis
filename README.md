@@ -52,6 +52,6 @@ extract the sql file which contains the statements for creating the tables then 
 
 4- run psql -d logAnalysis -f newsdata.sql
 
-5-Type the command C:\Program Files\PostgreSQL\9.6\bin>psql -U postgres -d LogAnalysis -a -f newsdata.sql
+5-Type the command C:\Program Files\PostgreSQL\9.6\bin>psql -U Sully -d LogAnalysis -a -f newsdata.sql
 
 6- run python loganalyis.py
