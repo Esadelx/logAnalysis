@@ -5,11 +5,11 @@ logs data Analysis report of adatabase using logs report using postgresql, pgadm
 
 <h2>The project consist of 3 main functions as following:</h2>
 
-  1-The get_top_articles to get the top 3 articles in number of views.
+  1-The get_articles to get the top 3 articles in number of views.
 
-  2-The get_top_authors to get the authors ordered by the number of the views of their articles.
+  2-The get_authors to get the authors ordered by the number of the views of their articles.
 
-  3-The get_requests_fail_days to get the days on which the requests lead to more than 1% errors.
+  3-The get_requests to get the days on which the requests lead to more than 1% errors.
 
 <h2>install Envirnoment </h2>
 
