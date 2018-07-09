@@ -4,13 +4,13 @@ logs data Analysis report of adatabase using logs report using postgresql, pgadm
  
 
 <h2>The project consist of 3 main functions as following:</h2>
+<ul>
+ <li>The get_articles to get the top 3 articles in number of views.</li>
 
-  1-The get_articles to get the top 3 articles in number of views.
+  <li>The get_authors to get the authors ordered by the number of the views of their articles.</li>
 
-  2-The get_authors to get the authors ordered by the number of the views of their articles.
-
-  3-The get_requests to get the days on which the requests lead to more than 1% errors.
-
+  <li>The get_days to get the days on which the requests lead to more than 1% errors.</li>
+</ul>
 <h2>install Envirnoment </h2>
 
 1-install python 3.7 
@@ -19,7 +19,7 @@ logs data Analysis report of adatabase using logs report using postgresql, pgadm
 
 3-install pgAdmin 4 
 
-The views used in this project:
+<strong >The views used in this project:</strong>
 
        "create or replace view error as "
             "select substring(cast(log.time as text), 0, 11) as date, "
