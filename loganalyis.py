@@ -37,7 +37,7 @@ def get_authors():
     conn.commit()
     
 
-def get_requests():
+def get_days():
      # function to get the days on which the requests lead to more than 1% errors 
     
     cursor.execute('''create or replace view dataerror as 
@@ -91,5 +91,5 @@ def print_table(x):
 if __name__ == '__main__':
     print_table(get_articles)
     print_table(get_authors)
-    print_table(get_requests)
+    print_table(get_days)
     close_conn()
