@@ -1,6 +1,6 @@
 #module to connect to the database
 import psycopg2
-#connect to the database
+# connect to the database
 conn = psycopg2.connect("dbname=logAnalysis user=Sully password=1234 host=localhost")
 cursor = conn.cursor()
 def get_articles():
