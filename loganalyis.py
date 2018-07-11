@@ -9,7 +9,7 @@ conn = psycopg2.connect("dbname=logAnalysis user=Sully"
 cursor = conn.cursor()
 
 
-def get_authors():
+def get_articles():
     # function the top three Authors
     cursor.execute('''select authors.name,
                       count(*) as num_view
